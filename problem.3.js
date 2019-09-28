@@ -1,4 +1,4 @@
-const ret = new Array(5).fill(-1);
+const ret = new Array(100000).fill(-1);
 
 function find(sticker, index) {
   if (index >= sticker.length) {
@@ -20,3 +20,5 @@ function find(sticker, index) {
 function solution(sticker) {
   return find(sticker, 0, 0);
 }
+
+console.log(solution([1, 12, 12, 12, 1]));
